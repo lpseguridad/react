@@ -1,9 +1,11 @@
-import Footer from "./Footer"
-
+import Footer from "./components/Footer"
+import Home from "./components/Home"
+import { Navbar } from "./components/Navbar"
 function App() {
-  let nombre = "pepe"  
+ 
   return <div>
-    <h1>TEST</h1>
+    <Navbar/>
+    <Home/>
     <Footer/>
   </div>
   
