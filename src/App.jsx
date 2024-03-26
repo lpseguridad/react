@@ -1,14 +1,17 @@
-import Footer from "./components/Footer"
-import Home from "./components/Home"
-import { Navbar } from "./components/Navbar"
+import Counter from "./components/common/counter/Counter";
+import { Footer } from "./components/layout/footer/Footer";
+import { Navbar } from "./components/layout/navbar/Navbar";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
+
 function App() {
- 
-  return <div>
-    <Navbar/>
-    <Home/>
-    <Footer/>
-  </div>
-  
+  return (
+    <div>
+      <Navbar />
+      <ItemListContainer />
+      <Footer />
+      <Counter />
+    </div>
+  );
 }
 
-export default App
+export default App;
